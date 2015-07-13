@@ -4,7 +4,7 @@
 body{
   text-align: center;
 }
-#game {
+#gameBoard {
     width:100%;
     background-color: blue;
     padding:0;

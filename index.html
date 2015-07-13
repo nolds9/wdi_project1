@@ -12,9 +12,14 @@
       <h1>Welcome to GA Jeopardy!</h1>
     </header>
     <main>
-      <div class="question"></div>
-      <div class="choices"></div>
-      <table id="game">
+      <div class="playerField">
+        <div class="question"></div>
+        <div class="choices">
+          <!-- <div class="true">True</div>
+          <div class="false">False</div> -->
+        </div>
+      </div>
+      <table id="gameBoard">
         <tr class="categories">
           <th><h3>Category 1</h3></th>
           <th><h3>Category 2</h3></th>
@@ -58,6 +63,7 @@
           <td class="five"><h5>500</h5></td>
         </tr>
       </table>
+      <div class="score">0</div>
     </main>
   </body>
 </html>
