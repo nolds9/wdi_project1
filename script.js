@@ -1,32 +1,26 @@
 $(document).ready(function(){
   console.log("Jquery is ready");
-  // game init
-  $(".true").hide();
-  $(".false").hide();
-
   // Event listeners for picking question
   //   When user selects point value
-  //     If point value = 100
       $("#test").on("click", function(){
           // Hide game board,
         $("#gameBoard").hide();
+        // hide score
+        $(".score").hide();
           // setup question
           var question = "Javascript was constructed in 13 days in 1995?";
           var choices = [true, false];
           var answer = true;
-          // Append question to question div
+          // Append question ti div
         $(".question").append(question);
-        // Append answers to choices div
+        // Append choices to div
         for(i=0; i < choices.length; i++){
           $(".choices").append("<div class='choice" + i + "'>" + choices[i] + "</div>");
         }
         $(".choices").children().on("click",function(){
-          console.log( $(this) );
-
+          var response = $(this).html();
+          console.log(response)
         })
-
-        // setup event listeners for each choices
-
       })
 
 

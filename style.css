@@ -24,3 +24,12 @@ th {
   font-size: 30px;
   font-weight: bold;
 }
+.choices {
+  margin: 1em;
+  padding: 1em;
+  display: inline;
+}
+.score {
+  padding: 1em;
+  margin:1em;
+}
