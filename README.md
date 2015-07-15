@@ -1,10 +1,10 @@
 # wdi_project1
 
-# Game: Self-Scoring Trivia
+## Game: Trivia
 
 ### User stories:
 
-* As a user, I want to a gameboard so I can interact and play the Game
+* As a user, I want to play a trivia game to test my knowledge of It's Always Sunny in Philadelphia.
 * As a user, I want categories of trivia so that I can answer questions relating to my topic of interest
 * As a user, I want a list of possible points so that I can pick a question and win points equal to my choice.
 * As a user, after selecting a category, I want to be prompted with a question so that I can answer it correctly and earn points.

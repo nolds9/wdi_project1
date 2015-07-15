@@ -1,7 +1,7 @@
 $(document).ready(function(){
     console.log("game ready")
     // game init
-      $(".msg").append("It's Always Sunny in Philadelphia Triva")
+      $(".msg").append("It's Always Sunny in Philadelphia Trivia")
       $(".response").hide();
       $("#new").hide();
       var questions = ["The 'Gang' consists of Charlie, Dee, Mac, Dennis, and Frank", "Kitten Mittons", "Charlie's favorite meal is milksteak","last question"]
@@ -19,6 +19,11 @@ $(document).ready(function(){
     $(".response").children().on("click", function(){
        var result = $(this).html()
        selections.push(result)
+       console.log(selections)
+       if (selections[i] == answers[i]){
+         numCorrect ++
+         $("#correct").text( numCorrect )
+       }
           i++
        if (i < questions.length ){
          $(".questions").empty();
