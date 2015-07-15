@@ -2,62 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Trivia!</title>
+    <title>Test!</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="script.js"></script>
   </head>
   <body>
     <header>
-      <h1>Welcome to GA Jeopardy!</h1>
+      <h2>Chardee MacDennis: The Game of Games</h1>
     </header>
     <main>
-      <div class="question"></div>
-      <div class="choices"></div>
-      <table id="game">
-        <tr class="categories">
-          <th><h3>Category 1</h3></th>
-          <th><h3>Category 2</h3></th>
-          <th><h3>Category 3</h3></th>
-          <th><h3>Category 4</h3></th>
-          <th><h3>Category 5</h3></th>
-        </tr>
-        <tr class="points">
-          <td id="test" class="one"><h5>100</h5></td>
-          <td class="one"><h5>100</h5></td>
-          <td class="one"><h5>100</h5></td>
-          <td class="one"><h5>100</h5></td>
-          <td class="one"><h5>100</h5></td>
-        </tr>
-        <tr class="points">
-          <td class="two"><h5>200</h5></td>
-          <td class="two"><h5>200</h5></td>
-          <td class="two"><h5>200</h5></td>
-          <td class="two"><h5>200</h5></td>
-          <td class="two"><h5>200</h5></td>
-        </tr>
-        <tr class="points">
-          <td class="three"><h5>300</h5></td>
-          <td class="three"><h5>300</h5></td>
-          <td class="three"><h5>300</h5></td>
-          <td class="three"><h5>300</h5></td>
-          <td class="three"><h5>300</h5></td>
-        </tr>
-        <tr class="points">
-          <td class="four"><h5>400</h5></td>
-          <td class="four"><h5>400</h5></td>
-          <td class="four"><h5>400</h5></td>
-          <td class="four"><h5>400</h5></td>
-          <td class="four"><h5>400</h5></td>
-        </tr>
-        <tr class="points">
-          <td class="five"><h5>500</h5></td>
-          <td class="five"><h5>500</h5></td>
-          <td class="five"><h5>500</h5></td>
-          <td class="five"><h5>500</h5></td>
-          <td class="five"><h5>500</h5></td>
-        </tr>
-      </table>
+      <div class="msg"></div>
+      <div class="play">
+        <button id="start">Start Game</button>
+        <button id="new">New Game</button>
+      </div>
+      <div class="questions"></div>
+      <div class="response">
+        <button id="true">true</button>
+        <button id="false">false</button>
+      </div>
     </main>
+    <div class="score">Number Correct: 0</div>
   </body>
 </html>

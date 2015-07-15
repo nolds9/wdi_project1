@@ -1,26 +1,35 @@
-* {
-  box-sizing: border-box;
-}
-body{
+body {
   text-align: center;
-}
-#game {
-    width:100%;
-    background-color: blue;
-    padding:0;
-    margin:0;
-    margin:auto;
-    font-size:16px;
-    text-align: center;
-}
-th {
-  color: white;
-  font-size: 20px;
-  border: 3px;
-  border-color: black;
-}
-.points {
-  color: yellow;
-  font-size: 30px;
+  background-image: url("http://black-celebration.net/gallery/albums/--/Its%20Always%20Sunny%20in%20Philadelphia/S7background.jpg");
+  font-size: 32px;
+  font-family: sans-serif;
   font-weight: bold;
+}
+header{
+  color: #FFFFFF;
+}
+main {
+    width:50%;
+    margin:auto;
+    padding: 0 25px 40px 10px;
+    background-color: #000;
+    border:4px solid #B0E0E6;
+    border-radius:5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px #888;
+}
+
+.play {
+    padding: 1em;
+    margin: 1em;
+}
+.questions {
+  padding: 1em;
+  margin: 1em;
+}
+.score {
+  padding: 2em;
+  margin: 1em;
+  color: #FFFFFF;
 }

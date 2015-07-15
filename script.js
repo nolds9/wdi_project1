@@ -1,33 +1,35 @@
 $(document).ready(function(){
-  console.log("Jquery is ready");
-  //Event listeners for picking question
-    //When user selects point value
-      $("#test").on("click", function(){
-          // Hide game board,
-        $("#game").hide();
-          // setup question
-          var question = "What year was javascript invented?";
-          var choices = [ 1995 , 2001 , 1992 , 1997 ];
-          var answer = 0;
-          // Append question to question div
-        $(".question").append(question);
-        // Append answers to choices div
-        for(i=0; i < choices.length; i++){
-          $(".choices").append(choices[i]);
-        }
-
-      })
-
-
-      // Question div with 4 options
-      // When user selects answer
-        // Check to se if correct
-          // If correct, reward points
-      // Show game board, hide question prompt
-      // Erase selected cell.
-
-
-
-
-
+    console.log("game ready")
+    // game init
+      $(".msg").append("It's Always Sunny in Philadelphia Triva")
+      $(".response").hide();
+      $("#new").hide();
+      var questions = ["The 'Gang' consists of Charlie, Dee, Mac, Dennis, and Frank", "Kitten Mittons", "Charlie's favorite meal is milksteak","last question"]
+      var answers = ['true', 'false','true']
+      var selections = []
+      var i = 0;
+      var numCorrect = 0;
+   // start game
+    $("#start").on("click", function(){
+       $("#start").hide();
+       $(".questions").append(questions[i])
+       $(".response").show()
+    })
+    // click event for true or false
+    $(".response").children().on("click", function(){
+       var result = $(this).html()
+       selections.push(result)
+          i++
+       if (i < questions.length ){
+         $(".questions").empty();
+         $(".questions").append(questions[i])
+      } else {
+         $(".questions").empty();
+         $(".response").hide()
+         $("#new").show()
+      }
+    })
+    $("#new").on("click", function(){
+      window.location.reload(false);
+    })
 })
