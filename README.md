@@ -2,7 +2,7 @@
 
 ## Game: It's Always Sunny in Philadelphia Trivia
 
-To play: fork repo and clone, or go to my link hosted on github pages.
+To play: fork repo and clone, or go to: http://nolds9.github.io/wdi_project1/
 
 Description:
 For our first project for GA's WDI 6, we were tasked with creating an interactive game from scratch using what we have learned so far about HTML/CSS/JS. While the original constraints ensured that our game had to fall inside the scope and meet the basic requirements of either a Blackjack, Trivia, Concentration, or Flashcards style clone, we had freedom to make our game our own with custom styles/functions/etc.
