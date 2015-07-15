@@ -3,26 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Always Sunny Philadelphia!</title>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="script.js"></script>
   </head>
   <body>
     <header>
-      <h2>Chardee MacDennis: The Game of Games</h1>
+      <h2>It's Always Sunny in Philadelphia Trivia</h1>
     </header>
     <main>
       <div class="msg"></div>
-      <div class="play">
-        <button id="start">Start Game</button>
-        <button id="new">New Game</button>
+      <div class="game">
+        <div class="questions"></div>
+        <div class="response">
+          <button id="true" class="btn">true</button>
+          <button id="false" class="btn">false</button>
+        </div>
       </div>
-      <div class="questions"></div>
-      <div class="response">
-        <button id="true">true</button>
-        <button id="false">false</button>
+      <div class="play">
+        <button id="start" class="btn">Start Game</button>
+        <button id="new" class="btn">New Game</button>
       </div>
     </main>
-    <div class="score">Number Correct: <span id="correct"></span></div>
+    <div class="score">Score: <span id="correct">0</span></div>
   </body>
 </html>
