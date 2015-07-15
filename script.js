@@ -4,8 +4,8 @@ $(document).ready(function(){
       $(".msg").text("Welcome, hit start game to play!")
       $(".response").hide();
       $("#new").hide();
-      var questions = ["The show is centered around 5 friends and their misadventures surrounding their bar Philly's Pub","The 'Gang' consists of Charlie, Dee, Mac, Dennis, and Frank", "Kitten Mittons", "Charlie's favorite meal is milksteak","last question"]
-      var answers = ['false','true', 'false','true']
+      var questions = ["The 'Gang' consists of Charlie, Dee, Mac, Dennis, and Frank","The show is about 5 friends and their bar Philly's Pub","Mac is in love with the Waitress", "Dee is the original inventor of Kitten Mittons", "Charlie's favorite meal is milksteak", "Mac realizes his dream of having a catch with Chase Utley", "Dennis runs for political office, only to drop out later", "Special Agent Jack Bauer is actually a junkyard cat", "Originally, Dennis is the wildcard, Mac is the muscle, and Charlie is the looks", "The D.E.N.N.I.S. system is way to methodically win the heart of any woman"]
+      var answers =  ['true','false','false','false','true','false','true', 'true', 'false','true']
       var selections = []
       var i = 0;
       var numCorrect = 0;
