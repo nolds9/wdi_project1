@@ -34,8 +34,11 @@ $(document).ready(function(){
          $(".response").hide()
          $(".msg").text('You got ' + numCorrect + ' out of ' + questions.length + ' questions right! Play again?')
          $("#new").show()
+        //  var themeSong = new Audio('https://archive.org/download/nyannyannyan/NyanCatoriginal.mp3');
+        //  themeSong.play();
       }
     })
+    // new game
     $("#new").on("click", function(){
       window.location.reload(false);
     })
